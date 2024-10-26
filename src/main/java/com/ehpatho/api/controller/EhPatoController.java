@@ -27,10 +27,10 @@ public class EhPatoController {
         this.ehPatoService = ehPatoService;
     }
 
-    @Operation(summary = "Endpoint responsável por identificar se elemento suspeito é pato ou alien e elaborar uma estratégia para combatê-lo" +
+    @Operation(summary = "Endpoint responsável por identificar se elemento suspeito é pato ou alien, e elaborar uma estratégia para combatê-lo" +
             " quando for o caso")
     @ApiResponses({
-            @ApiResponse(responseCode = "200", description = "Classificação e escolha de armas e abordagens feitas com sucesso"),
+            @ApiResponse(responseCode = "200", description = "Classificação e escolha de arma e de abordagem feitas com sucesso"),
             @ApiResponse(responseCode = "503", description = "Falha de comunicação com a API da IA")
     })
     @PostMapping(value = "/identificarECriarEstrategia")

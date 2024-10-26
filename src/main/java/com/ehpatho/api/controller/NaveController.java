@@ -38,7 +38,7 @@ public class NaveController {
     }
 
     @Operation(summary = "Endpoint responsável por cadastrar uma nova nave, definir os atributos periculosidade " +
-            "e classifcacao e retornar um DTO com esses campos já definidos")
+            "e classificacao e retornar um DTO com esses campos já definidos")
     @ApiResponses({
             @ApiResponse(responseCode = "200", description = "Nave criada com sucesso"),
             @ApiResponse(responseCode = "400", description = "Nome de nave vazio ou já existente")
@@ -80,7 +80,7 @@ public class NaveController {
         return ResponseEntity.ok(naveService.buscarNavePeloId(idNave));
     }
 
-    @Operation(summary = "Endpoint responsável informar os valores dos selects da tela de cadastro e edição de nave")
+    @Operation(summary = "Endpoint responsável por informar os valores dos selects da tela de cadastro e de edição de nave")
     @ApiResponses({
             @ApiResponse(responseCode = "200", description = "Valores dos selects retornados com sucesso")
     })
